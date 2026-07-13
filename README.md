@@ -1,58 +1,158 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Proyecto: Sistema Web de Bodega
+Tecnologías
+Backend: Laravel 12
+Frontend: Blade + Bootstrap 5
+Base de datos: MySQL
+Contenedores: Docker Compose
+ORM: Eloquent
+Control de versiones: Git y GitHub
+Fase 1: Base de datos
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Crearemos las siguientes tablas:
 
-## About Laravel
+Usuarios
+Roles
+Categorías
+Productos
+Clientes
+Proveedores
+Compras
+Detalle_Compras
+Ventas
+Detalle_Ventas
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Con relaciones y llaves foráneas.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Fase 2: Autenticación
+Login
+Registro
+Recuperar contraseña
+Cerrar sesión
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Roles:
 
-## Learning Laravel
+Administrador
+Vendedor
+Fase 3: Dashboard
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Mostrará:
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Total productos
+Total clientes
+Total proveedores
+Ventas del día
+Compras del día
+Productos con poco stock
+Gráficos estadísticos
+Fase 4: Productos
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+Funciones:
 
-## Agentic Development
+Registrar
+Editar
+Eliminar
+Buscar
+Subir imagen
+Control de stock
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Campos:
 
-```bash
-composer require laravel/boost --dev
+Código
+Nombre
+Descripción
+Precio
+Stock
+Imagen
+Categoría
+Fase 5: Categorías
 
-php artisan boost:install
-```
+CRUD completo.
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Fase 6: Clientes
 
-## Contributing
+CRUD completo.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Fase 7: Proveedores
 
-## Code of Conduct
+CRUD completo.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Fase 8: Compras
+Registrar compra
+Actualizar stock automáticamente
+Historial
+Imprimir comprobante
+Fase 9: Ventas
+Buscar productos
+Carrito
+Registrar venta
+Descontar stock automáticamente
+Boleta
+Factura
+PDF
+Fase 10: Reportes
+Productos
+Ventas
+Compras
+Clientes
+Proveedores
+Inventario
 
-## Security Vulnerabilities
+Exportación a:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+PDF
+Excel
 
-## License
+Fase 11: API REST
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Endpoints como:
+
+GET    /api/productos
+GET    /api/productos/{id}
+POST   /api/productos
+PUT    /api/productos/{id}
+DELETE /api/productos/{id}
+
+GET    /api/clientes
+POST   /api/clientes
+
+GET    /api/proveedores
+POST   /api/proveedores
+
+GET    /api/ventas
+POST   /api/ventas
+
+GET    /api/compras
+POST   /api/compras
+
+Fase 12: Frontend
+
+Diseño moderno con:
+
+Bootstrap 5
+Sidebar
+Navbar
+Cards
+Tablas
+Formularios
+Modal
+Alertas
+Fase 13: Docker
+
+Configuración de:
+
+Laravel
+MySQL
+phpMyAdmin
+Fase 14: Documentación
+
+Incluye:
+
+README.md profesional.
+Manual de usuario.
+Manual técnico.
+Diagrama entidad–relación.
+Diagrama de casos de uso.
+Diagrama de clases.
+Arquitectura del sistema.
+Colección de Postman.
+Instrucciones de instalación y despliegue.
